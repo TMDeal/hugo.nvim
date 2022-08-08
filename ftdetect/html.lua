@@ -14,7 +14,7 @@ autocmd({ "BufNewFile", "BufRead" }, {
         local is_hugo = fn.empty(fn.glob(curdir .. "/archetypes")) == 0
 
         if is_hugo then
-            vim.opt_local.filetype = "htmlhugo"
+            vim.opt_local.filetype = "gohtmltmpl"
         end
     end
 })
